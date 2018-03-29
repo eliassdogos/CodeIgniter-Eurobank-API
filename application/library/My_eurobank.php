@@ -1,4 +1,12 @@
-<?php defined('BASEPATH') OR exit('No direct script access allowed');
+<?php
+/**
+ * Name:    Eurobak API for Codeigniter
+ * Author:  Elias elsdogos
+ * Email: elsdogos@gmail.com
+ * @link https://github.com/eliassdogos/CodeIgniter-Eurobank-API
+ * @filesource
+ */
+defined('BASEPATH') OR exit('No direct script access allowed');
 
 class My_eurobank {
 
@@ -32,17 +40,17 @@ public $currency;
 
 	function get_all_config_vars()
 	{ // send Congig Vars to View
-										$config_vars=array(
-										"mid"=>$this->mid,
-										"lang"=>$this->lang,
-										"confirmUrl"=>$this->confirmUrl,
-										"currency"=>$this->currency,
-										"cancelUrl"=>$this->cancelUrl,
-										"shared_secret"=>$this->shared_secret,
-										);
+            $config_vars=array(
+            "mid"=>$this->mid,
+            "lang"=>$this->lang,
+            "confirmUrl"=>$this->confirmUrl,
+            "currency"=>$this->currency,
+            "cancelUrl"=>$this->cancelUrl,
+            "shared_secret"=>$this->shared_secret,
+            );
 
-										return $config_vars;
-	}
+            return $config_vars;
+}
 
 
 
@@ -96,29 +104,7 @@ public $currency;
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 }//end library
-
-
-
-
 
 
 
